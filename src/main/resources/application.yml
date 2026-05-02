@@ -1,0 +1,19 @@
+server:
+  port: ${PORT:8080}
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/taskdb
+    username: postgres
+    password: F@ith0412*
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+app:
+  jwt:
+    secret: ZmFrZS1zZWNyZXQta2V5LWNoYW5nZS1pbi1wcm9kdWN0aW9uLXBsZWFzZS0xMjM0NTY=
+    expiration-ms: 86400000
